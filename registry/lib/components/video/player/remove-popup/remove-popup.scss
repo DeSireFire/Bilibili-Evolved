@@ -1,0 +1,74 @@
+body {
+  &.remove-player-popup {
+    // https://www.bilibili.com/video/BV1WA4m1L7xa/
+    .bili-danmaku-x-cmd-shrink,
+    .bili-cmd-shrink {
+      display: none !important;
+    }
+    // https://www.bilibili.com/video/BV1V54y1b7yW/?t=58
+    &-combo-likes {
+      .bili-danmaku-x-guide,
+      .bili-guide,
+      .bilibili-player-video-popup-three,
+      .bilibili-player-video-popup-three-animate,
+      .bilibili-player-video-popup-follow,
+      .bilibili-player-video-popup-there-cyc,
+      .bpx-player-popup-three,
+      .bpx-player-popup-animate,
+      .bpx-player-popup-follow,
+      .bpx-player-popup-cyc {
+        display: none !important;
+      }
+    }
+    // https://www.bilibili.com/video/BV11h411k72c/?t=90
+    &-related-videos {
+      .bili-danmaku-x-link,
+      .bili-link,
+      .bilibili-player-video-link,
+      .bilibili-player-link,
+      .bpx-player-link {
+        display: none !important;
+      }
+    }
+    // https://www.bilibili.com/video/BV12Y4y1L7SR/?t=230
+    &-votes {
+      .bili-danmaku-x-vote,
+      .bili-vote,
+      .bilibili-player-video-popup-vote,
+      .bpx-player-popup-dm-close,
+      .bpx-player-popup-dm-shrink,
+      .bpx-player-popup-vote {
+        display: none !important;
+      }
+    }
+    // https://www.bilibili.com/video/BV1V54y1b7yW/?t=48
+    &-rates {
+      .bili-danmaku-x-score,
+      .bili-score,
+      .bilibili-player-score,
+      .bpx-player-popup-dm-close,
+      .bpx-player-score-summary-wrap,
+      .bpx-player-score,
+      .bili-qoeFeedback {
+        display: none !important;
+      }
+    }
+    // https://www.bilibili.com/video/BV1fe4y1b7NE/
+    &-reservations {
+      .bili-danmaku-x-reserve,
+      .bili-reserve,
+      .bpx-player-reserve {
+        display: none !important;
+      }
+    }
+    // https://www.bilibili.com/video/BV1Qe411d7LM/?t=221
+    &-promotions {
+      .bili-danmaku-x-cmtime,
+      .bili-cmtime,
+      .bpx-player-cmtime,
+      .bpx-player-skipcard {
+        display: none !important;
+      }
+    }
+  }
+}

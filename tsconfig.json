@@ -1,15 +1,43 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
+    "outDir": "./dist/",
     "moduleResolution": "node",
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "sourceMap": false,
-    "outDir": ".ts-output/"
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "target": "ESNext",
+    "strict": false,
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "vueCompilerOptions": {
+    "target": 2.7
   },
   "include": [
-    "./src/**/*.ts"
-  ]
+    "src/**/*",
+    "tests/**/*",
+    "registry/lib/**/*",
+    "webpack/**/*",
+    "registry/webpack/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dev",
+    "packages",
+    "typings"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
 }

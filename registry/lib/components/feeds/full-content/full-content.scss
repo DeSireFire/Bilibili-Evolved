@@ -1,0 +1,21 @@
+.bili-rich-text__content.folded {
+  -webkit-line-clamp: unset !important;
+  display: block !important;
+  height: auto !important;
+  max-height: unset !important;
+  ~ .bili-rich-text__action {
+    display: none !important;
+  }
+}
+.card .main-content {
+  .expand-btn,
+  .content-ellipsis {
+    display: none !important;
+  }
+  .content-full {
+    -webkit-line-clamp: unset !important;
+    display: block !important;
+    height: auto !important;
+    max-height: unset !important;
+  }
+}
